@@ -24,9 +24,9 @@
 ### Pseudocode
 ```
 if(x&1){
-	cout << "odd" << endl;
+   cout << "odd" << endl;
 }else{
-	cout << "even" << endl;
+   cout << "even" << endl;
 }
 ```
 ### CPP
@@ -36,14 +36,14 @@ using namespace std;
 
 int main() {
   int x;
-	cin >> x;
+  cin >> x;
 
-	if(x&1){
-		cout << "odd" << endl;
-	}else{
-		cout << "even" << endl;
-	}
+  if(x&1){
+     cout << "odd" << endl;
+  }else{
+     cout << "even" << endl;
+  }
 	
-	return 0;
+  return 0;
 }
 ```
