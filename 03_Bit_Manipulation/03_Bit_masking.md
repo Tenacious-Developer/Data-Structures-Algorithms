@@ -164,3 +164,51 @@ int main() {
     return 0;
   }
 ```
+## Clear last i th Bit
+* n = 15 => 0000 1111 and clear last 2 bit
+```
+5 = 1111 after clear last 2 bit 1100 i.e 12
+```
+* integer value 0 in bitwise form = 0000 0000 ....
+* ~(0) = 1111 1111 .... = (-1)
+* mask = (-1 << i) 
+* perform & operation (n & mask)
+```
+15                 = 1111
+(-1 << 2)          = 1100
+
+now 15 & (-1 << 2) = 1111
+                     1100
+                  ----------
+                     1100 = 12
+```
+
+### Pseudocode
+```
+void clearLastIthBit(int n, int i){
+	int mask = (-1 << i);
+	int res = (n & mask);
+	cout << res << endl;
+}
+```
+### CPP
+```cpp
+#include <iostream>
+using namespace std;
+
+void clearLastIthBit(int n, int i){
+	int mask = (-1 << i);
+	int res = (n & mask);
+	cout << res << endl;
+}
+
+int main() {
+    int n = 5;
+    int i;
+    cin >> i;
+
+    clearLastIthBit(n,i);
+
+    return 0;
+  }
+```
