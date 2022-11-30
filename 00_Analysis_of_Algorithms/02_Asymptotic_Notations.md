@@ -46,7 +46,7 @@ n^2 = O(n^2 - 10)---T
 ```
 f(n) = Ω(g(n))
 if
-f(n) <= c*g(n)
+f(n) > = c*g(n)
 
 so f(n) function will take minimum Ω(n) time
 ```
